@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<object id="window" class="GtkWindow">
+		<property name="visible">True</property>
+		<property name="title">BMI</property>
+		<property name="border-width">15</property>
+
+		<child>
+			<object id="grid" class="GtkGrid">
+				<property name="visible">True</property>
+				
+				<child>
+					<object id="bodylabel" class="GtkLabel">
+						<property name="visible">True</property>
+						<property name="label">Body Part</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">0</property>
+						<property name="width">2</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="torso" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">No amputatuions</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">1</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="leftlabel" class="GtkLabel">
+						<property name="visible">True</property>
+						<property name="label">left half</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">2</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="hand" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Hand</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">3</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="lowerarm_w_hand" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">entire arm and hand</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">4</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="lowerarm_wo_hand" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">entire arm</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">5</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="upperarm" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">upper arm</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">6</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="arm" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">whole arm</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">7</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="foot" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">foot</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">8</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="lowerleg_w_foot" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">lowerleg and foot</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">9</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="lowerleg_wo_foot" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">lowerleg</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">10</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="upperleg" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">upper leg</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">11</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="leg" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">entire leg</property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">12</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="quit" class="GtkButton">
+						<property name="visible">True</property>
+						<property name="label"></property>
+					</object>
+					<packing>
+						<property name="left-attach">0</property>
+						<property name="top-attach">13</property>
+						<property name="width">2</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="rightlabel" class="GtkLabel">
+						<property name="visible">True</property>
+						<property name="label">Right half </property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">2</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="hand_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Hand</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">3</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="lowerarm_w_hand_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Entire arm and hand</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">4</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="lowerarm_wo_hand_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Entire arm</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">5</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="upperarm_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Upper arm</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">6</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="arm_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Entire Arm</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">7</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="foot_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Foot</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">8</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="lowerleg_w_foot_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Lower leg and foot</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">9</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="lowerleg_wo_foot_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Lower leg</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">10</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="upperleg_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Thigh</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">11</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="leg_right" class="GtkCheckButton">
+						<property name="visible">True</property>
+						<property name="label">Entire Leg</property>
+					</object>
+					<packing>
+						<property name="left-attach">1</property>
+						<property name="top-attach">12</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="heightlabel" class="GtkLabel">
+						<property name="visible">True</property>
+						<property name="label">Height</property>
+					</object>
+					<packing>
+						<property name="left-attach">2</property>
+						<property name="top-attach">0</property>
+					</packing>
+				</child>
+				
+				<child>
+	  			<object id="height" class="GtkSpinButton">
+	    			<property name="visible">True</property>
+	  			</object>
+	  			<packing>
+	    			<property name="left-attach">2</property>
+	    			<property name="top-attach">1</property>
+	  			</packing>
+				</child>
+				
+				<child>
+					<object id="weightlabel" class="GtkLabel">
+						<property name="visible">True</property>
+						<property name="label">Weight</property>
+					</object>
+					<packing>
+						<property name="left-attach">2</property>
+						<property name="top-attach">2</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="weight" class="GtkSpinButton">
+						<property name="visible">True</property>
+					</object>
+					<packing>
+						<property name="left-attach">2</property>
+						<property name="top-attach">3</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="calculate" class="GtkButton">
+						<property name="visible">True</property>
+						<property name="label">Calculate BMI</property>
+					</object>
+					<packing>
+						<property name="left-attach">2</property>
+						<property name="top-attach">4</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="cmlabel" class="GtkLabel">
+						<property name="visible">True</property>
+						<property name="label">cm</property>
+					</object>
+					<packing>
+						<property name="left-attach">3</property>
+						<property name="top-attach">1</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="kglabel" class="GtkLabel">
+						<property name="visible">True</property>
+						<property name="label">kg</property>
+					</object>
+					<packing>
+						<property name="left-attach">3</property>
+						<property name="top-attach">3</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="bmilabel" class="GtkLabel">
+						<property name="visible">True</property>
+						<property name="label">BMI:</property>
+					</object>
+					<packing>
+						<property name="left-attach">2</property>
+						<property name="top-attach">5</property>
+					</packing>
+				</child>
+
+				<child>
+					<object id="bmi" class="GtkLabel">
+						<property name="visible">True</property>
+						<property name="label">Submit</property>
+					</object>
+					<packing>
+						<property name="left-attach">2</property>
+						<property name="top-attach">6</property>
+					</packing>
+				</child>
+				
+				<child>
+					<object id="reset" class="GtkButton">
+						<property name="visible">True</property>
+						<property name="label">Reset</property>
+					</object>
+					<packing>
+						<property name="left-attach">2</property>
+						<property name="top-attach">7</property>
+					</packing>
+				</child>
+			</object>
+			<packing>
+			</packing>
+		</child>
+	</object>
+</interface>
